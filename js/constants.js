@@ -1,6 +1,6 @@
 var d = {
     "site": {
-        "title": "Art Personality Quiz"
+        "title": "Art Persona Quiz"
     },
     "cities": {
         "heading": "Where art thou?",
@@ -77,7 +77,7 @@ var d = {
         ]
     },
     "q3": {
-        "heading": "Q3: Pick your final favourite:",
+        "heading": "Q3: Pick your final favourite artwork:",
         "answerlist": [
             {
                 "id": "q3a",
@@ -94,7 +94,7 @@ var d = {
         ]
     },
     "q4": {
-        "heading": "Q4: Which artist/band would we find on your spotify playlist?",
+        "heading": "Q4: What would your spotify playlist look like??",
         "answerlist": [
             {
                 "id": "q4a",
@@ -111,7 +111,7 @@ var d = {
         ]
     },
     "q5": {
-        "heading": "Q5: We know its difficult, but choose one favourite movie from the options?",
+        "heading": "Q5: What's your go-to movie on a lazy Sunday?",
         "answerlist": [
             {
                 "id": "q5a",
@@ -128,7 +128,7 @@ var d = {
         ]
     },
     "q6": {
-        "heading": "Q6: Stuck on a desert island, which TV show would you choose?",
+        "heading": "Q6: 'I could watch this TV Show on loop.'",
         "answerlist": [
             {
                 "id": "q6a",
@@ -145,7 +145,7 @@ var d = {
         ]
     },
     "q7": {
-        "heading": "Q7: Relaxing with a bowl of ice cream on a Sunday afternoon, which cartoon would you rather watch?",
+        "heading": "Q7: Looking for a laugh, which cartoon would you rather watch?",
         "answerlist": [
             {
                 "id": "q7a",
