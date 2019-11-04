@@ -162,7 +162,7 @@ var d = {
         ]
     },
     "emailform": {
-        "heading": " You're just one step away from your personalised art guide for this week!",
+        "heading": " You're just one step away from finding you Art Persona!",
     },
     "outcomes": [
         {
