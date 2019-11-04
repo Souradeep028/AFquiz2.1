@@ -128,7 +128,7 @@ var d = {
         ]
     },
     "q6": {
-        "heading": "Q6: "I could watch this TV Show on loop."",
+        "heading": "Q6: 'I could watch this TV Show on loop.'",
         "answerlist": [
             {
                 "id": "q6a",
