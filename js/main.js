@@ -200,7 +200,7 @@ $( document ).ready(function() {
     });
     $('.q6').click(function() {
         q[5] = $(this).attr('id');
-        if(q[5]=="q6b"){
+        if(q[5]=="q6a" || q[5]=="q6c"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
@@ -216,7 +216,7 @@ $( document ).ready(function() {
     });
     $('.q7').click(function() {
         q[6] = $(this).attr('id');
-        if(q[6]=="q7a" || q[6]=="q7c"){
+        if(q[6]=="q7a"){
             T++;
             // console.log("T value is = ", T);
             // console.log("C value is = ", C);
