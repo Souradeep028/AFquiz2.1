@@ -13,7 +13,7 @@ let C = 0;
 
 $('#sitetitle').text(d.site.title);
 
-$('#headernav').append(`<img src="./img/af-logo.png" id="aflogonav">`);
+// $('#headernav').append(`<img src="./img/af-logo.png" id="aflogonav">`);
 
 // $('#cityh').text(d.cities.heading);
 // $('#cityrow').html(d.cities.citylist.reduce(function (acc, c) {
@@ -115,7 +115,7 @@ $( document ).ready(function() {
     // $('.city').click(function() {
     //     city = $(this).attr('id');
     //     $('#citycontainer').hide(400);
-    //     $('#q1container').show(800);
+    //     $('#q1container').show(700);
     //     $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     // });
     $('.q1').click(function() {
@@ -131,7 +131,7 @@ $( document ).ready(function() {
             // console.log("C value is = ", C);
         }
         $('#q1container').hide(400);
-        $('#q2container').show(800);
+        $('#q2container').show(700);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q2').click(function() {
@@ -147,7 +147,7 @@ $( document ).ready(function() {
             // console.log("C value is = ", C);
         }
         $('#q2container').hide(400);
-        $('#q3container').show(800);
+        $('#q3container').show(700);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q3').click(function() {
@@ -163,7 +163,7 @@ $( document ).ready(function() {
             // console.log("C value is = ", C);
         }
         $('#q3container').hide(400);
-        $('#q4container').show(800);
+        $('#q4container').show(700);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q4').click(function() {
@@ -179,7 +179,7 @@ $( document ).ready(function() {
             // console.log("C value is = ", C);
         }
         $('#q4container').hide(400);
-        $('#q5container').show(800);
+        $('#q5container').show(700);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q5').click(function() {
@@ -195,7 +195,7 @@ $( document ).ready(function() {
             // console.log("C value is = ", C);
         }
         $('#q5container').hide(400);
-        $('#q6container').show(800);
+        $('#q6container').show(700);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q6').click(function() {
@@ -211,7 +211,7 @@ $( document ).ready(function() {
             // console.log("C value is = ", C);
         }
         $('#q6container').hide(400);
-        $('#q7container').show(800);
+        $('#q7container').show(700);
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
     });
     $('.q7').click(function() {
@@ -235,9 +235,9 @@ $( document ).ready(function() {
         }
         $('#q7container').hide(400);
         if (emailcollected) {
-            $('#endingcontainer').show(800);
+            $('#endingcontainer').show(700);
         } else {
-            $('#emailcontainer').show(800);
+            $('#emailcontainer').show(700);
         }
         $('#headernav').append(`<img src="${$(this).find(`img`).attr('src')}" id="aflogonav">`);
         var o1 = d.outcomes[0];
@@ -300,13 +300,16 @@ $( document ).ready(function() {
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => {
         //   $("#emailcontainer").hide(40);
-        //   $("#endingcontainer").show(800);
+        //   $("#endingcontainer").show(700);
           console.log("Success!", response);
         })
         .catch((error) => console.error("Error!", error.message));
 
+        $('#headernav').hide();
         $("#emailcontainer").hide(40);
-        $("#endingcontainer").show(800);
+        $("#headercontainer").css({"display": "flex", "justify-content": "center"});
+        $("#aflogo").css({"height": "48px"});
+        $("#endingcontainer").show(700);
   
       // $.post($form.attr("action"), $form.serialize()).then(function() {
       //     emailcollected = true;
@@ -320,7 +323,7 @@ $( document ).ready(function() {
     //     $.post($form.attr("action"), $form.serialize()).then(function() {
     //         emailcollected = true;
     //         $('#emailcontainer').hide(40);
-    //         $('#endingcontainer').show(800);
+    //         $('#endingcontainer').show(700);
     //     });
     // });
 
