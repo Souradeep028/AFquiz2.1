@@ -5,6 +5,12 @@ $("#q4container").hide();
 $("#q5container").hide();
 $("#q6container").hide();
 $("#q7container").hide();
+var pl1 = $("#pl-1");
+var pl2 = $("#pl-2");
+var pl3 = $("#pl-3");
+pl1.hide();
+pl2.hide();
+pl3.hide();
 $("#emailcontainer").hide();
 $("#endingcontainer").hide();
 
@@ -283,18 +289,21 @@ $(document).ready(function () {
       $("#endingp").text(o1.paragraph);
       $("#guideimg").prop("src", "./img" + "/" + o1.img);
       outcome = o1.id;
+      $("#pl-1").show(700);
       console.log("You are a Traditionalist.");
     } else if (T >= 0 && T <= 2) {
       $("#endingh").text(o2.heading);
       $("#endingp").text(o2.paragraph);
       $("#guideimg").prop("src", "./img" + "/" + o2.img);
       outcome = o2.id;
+      $("#pl-2").show(700);
       console.log("You are a New Age.");
     } else {
       $("#endingh").text(o3.heading);
       $("#endingp").text(o3.paragraph);
       $("#guideimg").prop("src", "./img" + "/" + o3.img);
       outcome = o3.id;
+      $("#pl-3").show(700);
       console.log("You are a Mixed Bag.");
     }
     // $('#cinput').val(city);
@@ -333,7 +342,6 @@ $(document).ready(function () {
     $("#submitemail").attr("disabled", true);
     fetch(scriptURL, {
       method: "POST",
-      mode: "no-cors",
       body: new FormData(form),
     })
       .then((response) => {

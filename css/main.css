@@ -15,7 +15,8 @@
     width: 50%;
     max-width: 720px;
 }
-#emailcard, #emailcard:hover {
+#emailcard,
+#emailcard:hover {
     border: none !important;
     cursor: default;
 }
@@ -41,9 +42,13 @@
     display: none;
 }
 
-@media(max-width: 800px){
-    #da{
+@media (max-width: 800px) {
+    #da {
         margin-top: 6px;
+    }
+    .swiper-container.two {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
     }
     /* #headercontainer{
         display: flex;
