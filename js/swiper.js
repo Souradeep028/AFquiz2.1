@@ -5,11 +5,11 @@ var swiper = new Swiper(".swiper-container.two", {
   loop: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  coverflow: {
-    rotate: 0,
-    stretch: 100,
-    depth: 15,
-    modifier: 1.5,
-    slideShadows: false,
-  },
+  // coverflow: {
+  //   rotate: 0,
+  //   stretch: 100,
+  //   depth: 15,
+  //   modifier: 1.5,
+  //   slideShadows: false,
+  // },
 });
