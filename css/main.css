@@ -1,56 +1,63 @@
 .card {
-    width: 18rem;
+  width: 18rem;
 }
 .card:hover {
-    cursor: pointer;
-    border-color: black;
+  cursor: pointer;
+  border-color: black;
 }
 .card-img-top {
-    padding: 4px;
+  padding: 4px;
 }
 .selectedcard {
-    border-color: black;
+  border-color: black;
 }
 .guideimg {
-    width: 50%;
-    max-width: 720px;
+  width: 50%;
+  max-width: 720px;
 }
 #emailcard,
 #emailcard:hover {
-    border: none !important;
-    cursor: default;
+  border: none !important;
+  cursor: default;
 }
 #aflogo {
-    height: 63px;
+  height: 63px;
 }
 #aflogonav {
-    height: 63px;
-    margin-left: 6px;
+  height: 63px;
+  margin-left: 6px;
 }
 #headercontainer {
-    padding-top: 3.2rem;
+  padding-top: 3.2rem;
 }
 .maincontainer {
-    padding-top: 3.2rem;
-    padding-bottom: 3.2rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
 }
 .maintext {
-    padding-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
 .hiddeninput {
-    display: none;
+  display: none;
+}
+
+/* Swiper */
+
+.swiper-container {
+  height: 100%;
 }
 
 @media (max-width: 800px) {
-    #da {
-        margin-top: 6px;
-    }
-    .swiper-container.two {
-        width: 100vw;
-        margin-left: calc(-50vw + 50%);
-    }
-    /* #headercontainer{
+  #da {
+    margin-top: 6px;
+  }
+  .swiper-container.two {
+    width: 100vw;
+    height: initial;
+    margin-left: calc(-50vw + 50%);
+  }
+  /* #headercontainer{
         display: flex;
         height: 6rem;
     } */
