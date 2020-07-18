@@ -14,6 +14,10 @@ pl3.hide();
 $("#emailcontainer").hide();
 $("#endingcontainer").hide();
 
+var emailsubmited = false;
+var outcome;
+var o1, o2, o3;
+
 let T = 0;
 let C = 0;
 
@@ -273,35 +277,12 @@ $(document).ready(function () {
     $("#headernav").append(
       `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
     );
-    var o1 = d.outcomes[0];
-    var o2 = d.outcomes[1];
-    var o3 = d.outcomes[2];
-    var outcome;
-    if (T >= 5) {
-      $("#endingh").text(o1.heading);
-      $("#endingp").text(o1.paragraph);
-      $("#guideimg").prop("src", "./img" + "/" + o1.img);
-      outcome = o1.id;
-      $("#pl-1").show(700);
-      console.log(emailcollected);
-      console.log("You are a Traditionalist.");
-    } else if (T >= 0 && T <= 2) {
-      $("#endingh").text(o2.heading);
-      $("#endingp").text(o2.paragraph);
-      $("#guideimg").prop("src", "./img" + "/" + o2.img);
-      outcome = o2.id;
-      $("#pl-2").show(700);
-      console.log(emailcollected);
-      console.log("You are a New Age.");
-    } else {
-      $("#endingh").text(o3.heading);
-      $("#endingp").text(o3.paragraph);
-      $("#guideimg").prop("src", "./img" + "/" + o3.img);
-      outcome = o3.id;
-      $("#pl-3").show(700);
-      console.log(emailcollected);
-      console.log("You are a Mixed Bag.");
-    }
+    o1 = d.outcomes[0];
+    o2 = d.outcomes[1];
+    o3 = d.outcomes[2];
+    console.log(emailsubmited);
+
+    // handleEnding();
     // $('#cinput').val(city);
     $("#q1input").val(q[0]);
     $("#q2input").val(q[1]);
@@ -352,8 +333,10 @@ $(document).ready(function () {
     $("#emailcontainer").hide(40);
     $("#headercontainer").css({ display: "flex", "justify-content": "center" });
     $("#aflogo").css({ height: "48px" });
-    $("#endingcontainer").show(700);
-
+    // $("#endingcontainer").show(700);
+    navigate();
+    emailsubmited = true;
+    // handleEnding();
     // $.post($form.attr("action"), $form.serialize()).then(function() {
     //     emailcollected = true;
 
@@ -371,12 +354,59 @@ $(document).ready(function () {
   // });
 
   $("#restart").click(function () {
-    q = ["", "", ""];
-    T = 0;
-    C = 0;
-    $("#endingcontainer").hide();
-    $("#q1container").show();
-    $("#headernav").empty();
-    $("#headernav").append('<img src="./img/af-logo.png" id="aflogonav">');
+    // q = ["", "", ""];
+    // T = 0;
+    // C = 0;
+    // $("#endingcontainer").hide();
+    // $("#q1container").show();
+    // $("#headernav").empty();
+    // $("#headernav").append('<img src="./img/af-logo.png" id="aflogonav">');
+    window.location.href = "index.html";
   });
 });
+
+function navigate() {
+  if (T >= 5) {
+    window.location.href = "trad.html";
+    console.log("You are a Traditionalist.");
+  } else if (T >= 0 && T <= 2) {
+    window.location.href = "new.html";
+    console.log("You are a New Age.");
+  } else {
+    window.location.href = "mixed.html";
+    console.log("You are a Mixed Bag.");
+  }
+}
+
+// function handleEnding() {
+//   if (emailsubmited) {
+//     if (T >= 5) {
+//       $("#endingh").text(o1.heading);
+//       $("#endingp").text(o1.paragraph);
+//       $("#guideimg").prop("src", "./img" + "/" + o1.img);
+//       outcome = o1.id;
+//       $("#pl-1").show(700);
+//       console.log(o1, o2, o3);
+//       console.log(emailsubmited);
+//       console.log("You are a Traditionalist.");
+//     } else if (T >= 0 && T <= 2) {
+//       $("#endingh").text(o2.heading);
+//       $("#endingp").text(o2.paragraph);
+//       $("#guideimg").prop("src", "./img" + "/" + o2.img);
+//       outcome = o2.id;
+//       $("#pl-2").show(700);
+//       console.log(o1, o2, o3);
+//       console.log(emailsubmited);
+//       console.log("You are a New Age.");
+//     } else {
+//       $("#endingh").text(o3.heading);
+//       $("#endingp").text(o3.paragraph);
+//       $("#guideimg").prop("src", "./img" + "/" + o3.img);
+//       outcome = o3.id;
+//       $("#pl-3").show(700);
+//       console.log(o1, o2, o3);
+//       console.log(emailsubmited);
+//       console.log("You are a Mixed Bag.");
+//     }
+//   }
+// }
