@@ -3,6 +3,9 @@ var swiper = new Swiper(".swiper-container.two", {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: {
+    delay: 2000,
+  },
   slidesPerView: "auto",
   centeredSlides: true,
   effect: "coverflow",
