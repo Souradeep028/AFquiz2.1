@@ -696,3 +696,10 @@ button.swiper-pagination-bullet {
   filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   width: 12px;
 }
+
+
+/* Custom @suraj */
+.swiper-container-3d .swiper-wrapper .swiper-slide .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-wrapper .swiper-slide .swiper-slide-shadow-left{
+  opacity: 0 !important;
+}
