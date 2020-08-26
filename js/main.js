@@ -311,14 +311,14 @@ $(document).ready(function () {
   });
 
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycbz45bm4_cacReXs_pSKmvMIO46ZV9IOthU7Mcf-ZBlxBT3E_FPB/execgu";
+    "https://script.google.com/macros/s/AKfycbz45bm4_cacReXs_pSKmvMIO46ZV9IOthU7Mcf-ZBlxBT3E_FPB/exec";
   const form = document.forms["quizinfo"];
 
-  $("#emailform").submit(function (e) {
+  $("#emailform").submit(async function (e) {
     e.preventDefault();
     // var $form = $(this);
     $("#submitemail").attr("disabled", true);
-    fetch(scriptURL, {
+    await fetch(scriptURL, {
       method: "POST",
       body: new FormData(form),
     })
