@@ -282,6 +282,14 @@ $(document).ready(function () {
     o3 = d.outcomes[2];
     console.log(emailsubmited);
 
+    if (T >= 5) {
+      outcome = "T";
+    } else if (T >= 0 && T <= 2) {
+      outcome = "N";
+    } else {
+      outcome = "M";
+    }
+
     // handleEnding();
     // $('#cinput').val(city);
     $("#q1input").val(q[0]);
@@ -316,15 +324,13 @@ $(document).ready(function () {
 
   $("#emailform").submit(async function (e) {
     e.preventDefault();
-    // var $form = $(this);
+
     $("#submitemail").attr("disabled", true);
     await fetch(scriptURL, {
       method: "POST",
       body: new FormData(form),
     })
       .then((response) => {
-        //   $("#emailcontainer").hide(40);
-        //   $("#endingcontainer").show(700);
         console.log("Success!", response);
       })
       .catch((error) => console.error("Error!", error.message));
