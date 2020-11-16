@@ -45,6 +45,7 @@ $("#q1row").html(
       `<div class="col-sm" align="center">
             <div class="card q1" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`
@@ -60,6 +61,7 @@ $("#q2row").html(
       `<div class="col-sm" align="center">
             <div class="card q2" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`
@@ -75,6 +77,7 @@ $("#q3row").html(
       `<div class="col-sm" align="center">
             <div class="card q3" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`
@@ -90,6 +93,7 @@ $("#q4row").html(
       `<div class="col-sm" align="center">
             <div class="card q4" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`
@@ -105,6 +109,7 @@ $("#q5row").html(
       `<div class="col-sm" align="center">
             <div class="card q5" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`
@@ -120,6 +125,7 @@ $("#q6row").html(
       `<div class="col-sm" align="center">
             <div class="card q6" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`
@@ -135,6 +141,7 @@ $("#q7row").html(
       `<div class="col-sm" align="center">
             <div class="card q7" id="${c.id}">
                 <img class="card-img-top" src="./img/${c.img}">
+                <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
         </div>`

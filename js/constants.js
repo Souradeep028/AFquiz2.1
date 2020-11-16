@@ -48,14 +48,17 @@ var d = {
       {
         id: 'q1a',
         img: 'q1a.jpg',
+        text: 'Bernini: Ecstacy of Saint Teresa'
       },
       {
         id: 'q1b',
         img: 'q1b.jpg',
+        text: 'Damien Hirst: Butterfly'
       },
       {
         id: 'q1c',
         img: 'q1c.jpg',
+        text: 'G R Iranna: Naavu (We Together)'
       },
     ],
   },
@@ -65,14 +68,17 @@ var d = {
       {
         id: 'q2a',
         img: 'q2a.jpg',
+        text: 'C B Hoyo: Van Gogh and Chill (Van hoe)'
       },
       {
         id: 'q2b',
         img: 'q2b.jpg',
+        text: 'Hemendranath Mazumdar : Toillete'
       },
       {
         id: 'q2c',
         img: 'q2c.jpg',
+        text: 'Hokusai: The Great Wave of Kanagawa'
       },
     ],
   },
@@ -82,14 +88,17 @@ var d = {
       {
         id: 'q3a',
         img: 'q3a.jpg',
+        text: 'Thomas Cole: The Course of Empire: Consummation (1835–1836)'
       },
       {
         id: 'q3b',
         img: 'q3b.jpg',
+        text: 'Dave Chihuly: The Sun'
       },
       {
         id: 'q3c',
         img: 'q3c.jpg',
+        text: 'Maurizio Cattelan: America'
       },
     ],
   },
@@ -99,14 +108,17 @@ var d = {
       {
         id: 'q4a',
         img: 'q4a.jpg',
+        text: 'Childish Gambino'
       },
       {
         id: 'q4b',
         img: 'q4b.jpg',
+        text: 'Red Hot Chilli Peppers'
       },
       {
         id: 'q4c',
         img: 'q4c.jpg',
+        text: 'ABBA'
       },
     ],
   },
@@ -116,14 +128,17 @@ var d = {
       {
         id: 'q5a',
         img: 'q5a.jpg',
+        text: 'The Matrix'
       },
       {
         id: 'q5b',
         img: 'q5b.jpg',
+        text: 'Crazy Rich Asians'
       },
       {
         id: 'q5c',
         img: 'q5c.jpg',
+        text: 'We\'re the Millers'
       },
     ],
   },
@@ -133,14 +148,17 @@ var d = {
       {
         id: 'q6a',
         img: 'q6a.jpg',
+        text: 'Friends'
       },
       {
         id: 'q6b',
         img: 'q6b.jpg',
+        text: 'Lucifer'
       },
       {
         id: 'q6c',
         img: 'q6c.jpg',
+        text: 'The Crown'
       },
     ],
   },
@@ -150,14 +168,17 @@ var d = {
       {
         id: 'q7a',
         img: 'q7a.jpg',
+        text: 'Scooby Doo'
       },
       {
         id: 'q7b',
         img: 'q7b.jpg',
+        text: 'Bojack Horseman'
       },
       {
         id: 'q7c',
         img: 'q7c.jpg',
+        text: 'Big Mouth '
       },
     ],
   },
