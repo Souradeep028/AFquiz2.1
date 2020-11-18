@@ -44,7 +44,7 @@ $("#q1row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q1" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q1" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
@@ -60,7 +60,7 @@ $("#q2row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q2" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q2" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
@@ -76,7 +76,7 @@ $("#q3row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q3" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q3" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
@@ -92,7 +92,7 @@ $("#q4row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q4" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q4" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
@@ -108,7 +108,7 @@ $("#q5row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q5" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q5" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
@@ -124,7 +124,7 @@ $("#q6row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q6" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q6" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
@@ -140,7 +140,7 @@ $("#q7row").html(
       acc +
       `<div class="col-sm" align="center">
             <div class="card q7" id="${c.id}">
-                <img class="card-img-top" src="./img/${c.img}">
+                <img class="card-img-top q7" src="./img/${c.img}">
                 <p class="card-subtitle mt-4 mb-4 ml-2 mr-2 text-muted">${c.text}</p>
             </div>
             <br>
