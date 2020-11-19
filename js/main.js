@@ -169,6 +169,7 @@ $(document).ready(function () {
     }
     $("#q1container").hide(400);
     $("#q2container").show(700);
+    console.log($(this))
     $("#headernav").append(
       `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
     );
