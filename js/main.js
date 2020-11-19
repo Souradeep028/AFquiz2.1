@@ -169,10 +169,10 @@ $(document).ready(function () {
     }
     $("#q1container").hide(400);
     $("#q2container").show(700);
-    console.log($(this))
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+	if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
   });
   $(".q2").click(function () {
     q[1] = $(this).attr("id");
@@ -187,9 +187,10 @@ $(document).ready(function () {
     }
     $("#q2container").hide(400);
     $("#q3container").show(700);
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+    if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
   });
   $(".q3").click(function () {
     q[2] = $(this).attr("id");
@@ -204,9 +205,10 @@ $(document).ready(function () {
     }
     $("#q3container").hide(400);
     $("#q4container").show(700);
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+    if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
   });
   $(".q4").click(function () {
     q[3] = $(this).attr("id");
@@ -221,9 +223,10 @@ $(document).ready(function () {
     }
     $("#q4container").hide(400);
     $("#q5container").show(700);
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+    if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
   });
   $(".q5").click(function () {
     q[4] = $(this).attr("id");
@@ -238,9 +241,10 @@ $(document).ready(function () {
     }
     $("#q5container").hide(400);
     $("#q6container").show(700);
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+    if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
   });
   $(".q6").click(function () {
     q[5] = $(this).attr("id");
@@ -255,9 +259,10 @@ $(document).ready(function () {
     }
     $("#q6container").hide(400);
     $("#q7container").show(700);
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+    if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
   });
   $(".q7").click(function () {
     q[6] = $(this).attr("id");
@@ -282,9 +287,10 @@ $(document).ready(function () {
     } else {
       $("#emailcontainer").show(700);
     }
-    $("#headernav").append(
-      `<img src="${$(this).find("img").attr("src")}" id="aflogonav">`
-    );
+    if($(this).parent().children("img.card-img-top").attr("src") != undefined)
+		$("#headernav").append(
+		  `<img src="${$(this).parent().children("img.card-img-top").attr("src")}" id="aflogonav">`
+		);
     o1 = d.outcomes[0];
     o2 = d.outcomes[1];
     o3 = d.outcomes[2];
